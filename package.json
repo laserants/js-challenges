@@ -1,0 +1,25 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:plusone": "node --experimental-vm-modules node_modules/jest/bin/jest.js -- -p plusOne.test.js",
+    "test:letter": "node --experimental-vm-modules node_modules/jest/bin/jest.js -- -p letterCombination.test.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
+    "bench:plusone": "node plus-one/plus-one.bench.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "js-performance-test": "^1.1.0",
+    "microtime": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.3.1"
+  }
+}
