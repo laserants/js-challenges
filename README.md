@@ -16,4 +16,5 @@ Run the 'Plus One' tests.
 Run the 'Letter Combination' tests.
 
 ### `npm run bench:plusone`
-Run a benchmark with the different approaches and return which is the best option..
+Run a benchmark with the different approaches and return which is the best option.
+![image](https://user-images.githubusercontent.com/7839474/143880713-745639ff-4682-495c-aa8a-c8eb76acc0d6.png)
