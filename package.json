@@ -7,8 +7,10 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:plusone": "node --experimental-vm-modules node_modules/jest/bin/jest.js -- -p plusOne.test.js",
     "test:letter": "node --experimental-vm-modules node_modules/jest/bin/jest.js -- -p letterCombination.test.js",
+    "test:palindrome": "node --experimental-vm-modules node_modules/jest/bin/jest.js -- -p palindrome.test.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
-    "bench:plusone": "node plus-one/plus-one.bench.js"
+    "bench:plusone": "node plus-one/plus-one.bench.js",
+    "bench:3sum": "node 3-sum/3sum.bench.js"
   },
   "type": "module",
   "author": "",

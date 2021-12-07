@@ -1,14 +1,25 @@
-function plusOne(d) {
-  let i = d.length - 1;
-  while (i >= 0) {
-    d[i]++;
-    if (d[i] < 10) return d;
-    d[i] = 0;
+function sumaruno(arreglo){
+  / @type {Array} */
+  let nuevo = []
+  /** @type {Array} */
+  let arreglorev = arreglo.reverse()
+  let acarreo = 1
 
-    if (i === 0) { d.unshift(1)}
-    i--;
-  }
-  return d;
+  arreglorev.forEach((element) => {
+      const num = parseInt(element) + acarreo
+      const num_string = num + ''
+      if(num > 9) {
+          nuevo.push(num_string[1])
+          acarreo = parseInt(num_string[0]); 
+      }
+      else{
+          nuevo.push(num_string[0]) 
+          acarreo = 0 
+      }
+  });
+
+  if(acarreo>0) nuevo.push(acarreo)
+  return nuevo.reverse().map(Number)
 }
 
-export default plusOne;
+export default sumaruno;
