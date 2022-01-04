@@ -10,6 +10,7 @@
     "test:palindrome": "node --experimental-vm-modules node_modules/jest/bin/jest.js palindrome.test.js",
     "test:validParentheses": "node --experimental-vm-modules node_modules/jest/bin/jest.js validParentheses.test.js",
     "test:mostWater": "node --experimental-vm-modules node_modules/jest/bin/jest.js mostWater.test.js",
+    "test:consecutiveCharacters": "node --experimental-vm-modules node_modules/jest/bin/jest.js consecutiveCharacters.test.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
     "bench:plusone": "node plus-one/plus-one.bench.js",
     "bench:3sum": "node 3-sum/3sum.bench.js"

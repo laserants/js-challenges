@@ -2,7 +2,6 @@ var isPalindrome = function (x) {
   if (x < 0) return false;
   const str = "" + x;
   const l = str.length;
-  no;
 
   for (let i = 0; i < l / 2; i++) {
     if (str[i] !== str[l - i - 1]) return false;
