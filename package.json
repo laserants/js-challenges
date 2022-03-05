@@ -6,6 +6,7 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:plusone": "node --experimental-vm-modules node_modules/jest/bin/jest.js plusOne.test.js",
+    "test:3sum": "node --experimental-vm-modules node_modules/jest/bin/jest.js 3sum.test.js",
     "test:letter": "node --experimental-vm-modules node_modules/jest/bin/jest.js letterCombination.test.js",
     "test:palindrome": "node --experimental-vm-modules node_modules/jest/bin/jest.js palindrome.test.js",
     "test:validParentheses": "node --experimental-vm-modules node_modules/jest/bin/jest.js validParentheses.test.js",
