@@ -4,10 +4,9 @@ test("PlusOne: 123 => 124", () => {
   expect(plusOne([1, 2, 3])).toStrictEqual([1, 2, 4]);
 });
 
-test("PlusOne: 130 => 131", () => {
+test("PlusOne: 129 => 130", () => {
   expect(plusOne([1, 2, 9])).toStrictEqual([1, 3, 0]);
 });
-
 
 test("PlusOne:999 => 1000", () => {
   expect(plusOne([9, 9, 9])).toStrictEqual([1, 0, 0, 0]);
