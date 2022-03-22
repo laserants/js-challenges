@@ -9,9 +9,11 @@
     "test:3sum": "node --experimental-vm-modules node_modules/jest/bin/jest.js 3sum.test.js",
     "test:letter": "node --experimental-vm-modules node_modules/jest/bin/jest.js letterCombination.test.js",
     "test:palindrome": "node --experimental-vm-modules node_modules/jest/bin/jest.js palindrome.test.js",
+    "test:longestpalindromic": "node --experimental-vm-modules node_modules/jest/bin/jest.js longestPalindromic.test.js",
     "test:validParentheses": "node --experimental-vm-modules node_modules/jest/bin/jest.js validParentheses.test.js",
     "test:mostWater": "node --experimental-vm-modules node_modules/jest/bin/jest.js mostWater.test.js",
     "test:consecutiveCharacters": "node --experimental-vm-modules node_modules/jest/bin/jest.js consecutiveCharacters.test.js",
+    "test:bestTime": "node --experimental-vm-modules node_modules/jest/bin/jest.js bestTimeToBuy.test.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
     "bench:plusone": "node plus-one/plus-one.bench.js",
     "bench:3sum": "node 3-sum/3sum.bench.js"
@@ -19,13 +21,13 @@
   "type": "module",
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "benchmark": "^2.1.4",
     "js-performance-test": "^1.1.0",
-    "microtime": "^3.0.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^27.0.3",
-    "jest": "^27.3.1"
+    "microtime": "^3.0.0",
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "jest-extended": "^2.0.0"
   }
 }

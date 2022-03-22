@@ -1,26 +1,21 @@
-const mappedCharacters = {
-  "}": "{",
-  "]": "[",
-  ")": "(",
-};
-
-var isValid = function (s) {
-  const openCharactersStack = [];
-
-  for (let c of s) {
-    switch (c) {
-      case "(":
-      case "[":
-      case "{":
-        openCharactersStack.push(c);
-        break;
-      default:
-        const last = openCharactersStack.pop();
-        if (mappedCharacters[c] !== last) return false;
+function ParentesisValido(input) {
+  let pila = [];
+  const parejas = {
+    "(": ")",
+    "[": "]",
+    "{": "}",
+  };
+  for (let i = 0; i <= input.length; i++) {
+    if (input[i] == "(" || input[i] == "{" || input[i] == "[") {
+      pila.push(parejas[input[i]]);
+    } else {
+      const last = pila.pop();
+      if (last != input[i]) return false;
     }
   }
+  if (pila.length > 0) return false;
 
-  return !openCharactersStack.length;
-};
+  return true;
+}
 
-export default isValid;
+export default ParentesisValido;
