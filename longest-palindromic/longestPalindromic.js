@@ -1,42 +1,23 @@
-function LongestPalindromic(input) {
-  let output = input[0];
-  let long = 0;
-  let ban = 0;
-  let x = 0;
-  let inicio = "";
-  let fin = "";
-
-  for (let i = 0; i < input.length; i++) {
-    if (ban == 0) x = input.length - 1;
-
-    for (let j = x; j > 0; j--) {
-      if (i != j && j > i) {
-        if (input[i] == input[j]) {
-          inicio = inicio + input[i];
-          fin = input[i] + fin;
-
-          if (i + 1 == j - 1) inicio = inicio + input[i + 1];
-
-          if (i + 1 == j || i + 1 == j - 1) {
-            if ((inicio + fin).length > long) {
-              output = inicio + fin;
-              inicio = "";
-              fin = "";
-              long = output.length;
-            } else if (i + 1 == j) {
-              inicio = "";
-              fin = "";
-            }
-          } else {
-            ban = 1;
-            x = j - 1;
-          }
-          j = 0;
-        }
-      }
+var longestPalindrome = function (s) {
+  for (let j = s.length - 1; j >= 0; j--) {
+    let i = 0,
+      k = j;
+    while (k < s.length) {
+      let substr = s.substring(i, k + 1);
+      if (isPalindrome(substr)) return substr;
+      i++, k++;
     }
   }
-  return output;
-}
+  return "";
+};
 
-export default LongestPalindromic;
+var isPalindrome = function (str) {
+  const l = str.length;
+
+  for (let i = 0; i < l / 2; i++) {
+    if (str[i] !== str[l - i - 1]) return false;
+  }
+  return true;
+};
+
+export default longestPalindrome 
