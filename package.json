@@ -14,6 +14,7 @@
     "test:mostWater": "node --experimental-vm-modules node_modules/jest/bin/jest.js mostWater.test.js",
     "test:consecutiveCharacters": "node --experimental-vm-modules node_modules/jest/bin/jest.js consecutiveCharacters.test.js",
     "test:bestTime": "node --experimental-vm-modules node_modules/jest/bin/jest.js bestTimeToBuy.test.js",
+    "test:happyNumber": "node --experimental-vm-modules node_modules/jest/bin/jest.js isHappy.test.js",
     "test:zigZag": "node --experimental-vm-modules node_modules/jest/bin/jest.js zigZag.test.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
     "bench:plusone": "node plus-one/plus-one.bench.js",
