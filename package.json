@@ -16,6 +16,7 @@
     "test:bestTime": "node --experimental-vm-modules node_modules/jest/bin/jest.js bestTimeToBuy.test.js",
     "test:happyNumber": "node --experimental-vm-modules node_modules/jest/bin/jest.js isHappy.test.js",
     "test:zigZag": "node --experimental-vm-modules node_modules/jest/bin/jest.js zigZag.test.js",
+    "test:romanInteger": "node --experimental-vm-modules node_modules/jest/bin/jest.js romanInteger.test.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
     "bench:plusone": "node plus-one/plus-one.bench.js",
     "bench:3sum": "node 3-sum/3sum.bench.js"

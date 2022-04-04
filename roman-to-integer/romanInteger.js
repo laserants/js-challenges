@@ -12,7 +12,7 @@ var romanToInt = function (s) {
   let value = 0;
   for (let i = 0; i < s.length; i++) {
     const curr = mapValues[s[i]];
-    const next = mapValues[s[i+1]];
+    const next = mapValues[s[i + 1]];
 
     if (curr < next) {
       value -= curr;
@@ -24,4 +24,4 @@ var romanToInt = function (s) {
   return value;
 };
 
-export default romanToInt
+export default romanToInt;
