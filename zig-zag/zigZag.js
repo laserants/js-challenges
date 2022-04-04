@@ -3,14 +3,13 @@ var convert = function (s, numRows) {
     return s;
   }
 
-  const matrix = [...new Array(numRows)].map(() => []);
+  const matrix = Array(numRows).fill("");
 
   let r = 0;
   let ord = "desc";
 
   for (let i = 0; i < s.length; i++) {
-    const c = s.charAt(i);
-    matrix[r].push(c);
+    matrix[r] += s[i];
 
     if (ord === "desc") {
       r++;
@@ -22,10 +21,7 @@ var convert = function (s, numRows) {
     }
   }
 
-  return matrix.reduce((prev, curr) => {
-    prev += curr.join("");
-    return prev;
-  }, "");
+  return matrix.join("");
 };
 
 export default convert;
